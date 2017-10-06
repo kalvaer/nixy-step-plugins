@@ -173,7 +173,7 @@ providers:
         description: "the maximum number of attempts to try"
         required: true        
   - name: nixy-waitfor-ping
-    service: WorkflowNodeStep
+    service: RemoteScriptNodeStep
     title: '*nixy / waitfor / ping'
     description: 'wait for the host to be reachable'
     plugin-type: script
@@ -197,7 +197,7 @@ providers:
         description: "the maximum number of attempts to try"
         required: true        
   - name: nixy-waitfor-port-open
-    service: WorkflowNodeStep
+    service: RemoteScriptNodeStep
     title: '*nixy / waitfor / port-open'
     description: 'wait for the network service to be reachable'
     plugin-type: script
